@@ -1,0 +1,530 @@
+ "C:\Program Files\Java\jdk-11.0.16\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.2\lib\idea_rt.jar=50559:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.1.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Users\tjqhg\OneDrive\바탕 화면\포트폴리오\JDBCTest\JDBCTest\out\production\classes;C:\Users\tjqhg\OneDrive\바탕 화면\포트폴리오\JDBCTest\JDBCTest\out\production\resources;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-jdbc\2.7.7-SNAPSHOT\cf5bcce40bd944f7e2d60e70f6ce46ed493e016b\spring-boot-starter-jdbc-2.7.7-SNAPSHOT.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter\2.7.7-SNAPSHOT\43fd75d37d75edc09bb3f8dc5805ff958e7f0ef3\spring-boot-starter-2.7.7-SNAPSHOT.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\com.zaxxer\HikariCP\4.0.3\107cbdf0db6780a065f895ae9d8fbf3bb0e1c21f\HikariCP-4.0.3.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jdbc\5.3.24\909c19ab470a59b9fd23177d26b8e880733b15d4\spring-jdbc-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-autoconfigure\2.7.7-SNAPSHOT\e4e4c0c3ca5218bc4159c2947081eeebe15c8fd9\spring-boot-autoconfigure-2.7.7-SNAPSHOT.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot\2.7.7-SNAPSHOT\707a38d6dc270a3cdb6614d3ca634523eb81e6b8\spring-boot-2.7.7-SNAPSHOT.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework.boot\spring-boot-starter-logging\2.7.7-SNAPSHOT\c9f93556ebaec2f8feb59e51808e927583b71b44\spring-boot-starter-logging-2.7.7-SNAPSHOT.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\jakarta.annotation\jakarta.annotation-api\1.3.5\59eb84ee0d616332ff44aba065f3888cf002cd2d\jakarta.annotation-api-1.3.5.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-core\5.3.24\d095c329f30baf2b6d44eccbd2352d7a2f840c72\spring-core-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.yaml\snakeyaml\1.30\8fde7fe2586328ac3c68db92045e1c8759125000\snakeyaml-1.30.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.36\6c62681a2f655b49963a5983b8b0950a6120ae14\slf4j-api-1.7.36.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-tx\5.3.24\175a2157fce17669af6d4db1d094cb4baaa5c8fd\spring-tx-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-beans\5.3.24\e487ea6de09b9a7c36548028feeafa511a593532\spring-beans-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-context\5.3.24\e48634d7b8f40d4d0fe978830be0247bfc2ff2cd\spring-context-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.2.11\4741689214e9d1e8408b206506cbe76d1c6a7d60\logback-classic-1.2.11.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-to-slf4j\2.17.2\17dd0fae2747d9a28c67bc9534108823d2376b46\log4j-to-slf4j-2.17.2.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.slf4j\jul-to-slf4j\1.7.36\ed46d81cef9c412a88caef405b58f93a678ff2ca\jul-to-slf4j-1.7.36.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-jcl\5.3.24\2b30878663ceed2af07238dc54e92e5bf001438d\spring-jcl-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-aop\5.3.24\efd01bc1048a2e1b6a7442fbd78170bc02c342b7\spring-aop-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.springframework\spring-expression\5.3.24\ae7410418e7b4bd27a01e3fb1c2fed35b2bc1e84\spring-expression-5.3.24.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.2.11\a01230df5ca5c34540cdaa3ad5efb012f1f1f792\logback-core-1.2.11.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\org.apache.logging.log4j\log4j-api\2.17.2\f42d6afa111b4dec5d2aea0fe2197240749a4ea6\log4j-api-2.17.2.jar;C:\Users\tjqhg\.gradle\caches\modules-2\files-2.1\com.h2database\h2\2.1.214\d5c2005c9e3279201e12d4776c948578b16bf8b2\h2-2.1.214.jar" bohyun.JDBCTest.main.Main
+    10 번째 손님 금액 입력 : 10000
+    11 번째 손님 금액 입력 : 10000
+    12 번째 손님 금액 입력 : 10000
+    13 번째 손님 금액 입력 : 10000
+    14 번째 손님 금액 입력 : 10000
+    
+    1 번 손님이 가진 금액 : 20000
+    2 번 손님이 가진 금액 : 20000
+    3 번 손님이 가진 금액 : 20000
+    4 번 손님이 가진 금액 : 20000
+    5 번 손님이 가진 금액 : 20000
+    6 번 손님이 가진 금액 : 10000
+    7 번 손님이 가진 금액 : 10000
+    8 번 손님이 가진 금액 : 10000
+    9 번 손님이 가진 금액 : 10000
+    10 번 손님이 가진 금액 : 10000
+    11 번 손님이 가진 금액 : 10000
+    12 번 손님이 가진 금액 : 10000
+    13 번 손님이 가진 금액 : 10000
+    14 번 손님이 가진 금액 : 10000
+    15 번 손님이 가진 금액 : 10000
+    
+    몇 번째 손님을 선택 하시겠습니까?
+    1
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    치킨
+    
+    1 번째 손님이 치킨을 구매해서 현재 남은 금액 15000 원 입니다
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    피자
+    
+    1 번째 손님이 피자를 구매해서 현재 남은 금액 10000 원 입니다
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    타코야키
+    
+    1 번째 손님이 타코야키를 구매해서 현재 남은 금액 7000 원 입니다
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    라면
+    
+    1 번째 손님이 라면을 구매해서 현재 남은 금액 4000 원 입니다
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    우동
+    
+    1 번째 손님이 우동을 구매해서 현재 남은 금액 1000 원 입니다
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    치킨
+    1 번 손님 현재 가지고 있는 돈이 부족해서 대출 받으셔야 합니다
+    치킨 구매를 실패해서 현재 남은 금액 1000 원 입니다
+    
+    자동으로 대출메뉴로 넘어갑니다
+    
+    1 번 손님의 다음 손님에게 대출 받습니다
+    1 번 손님 대출 받으실 금액을 입력하세요
+    10000
+    
+    
+    
+    
+    1번 손님이 2번 손님에게 10000원을 대출 받아서 현재 남은 금액 11000원 입니다
+    
+    2번 손님은 1번 손님에게 10000원을 빌려줘서 현재 남은 금액 10000원 입니다
+    1. 더 빌린다, 2. 빌리지 않는다
+    1
+    
+    
+    자동으로 3 번 손님에게 대출 받습니다
+    
+    1 번 손님 추가로 대출 받으실 금액을 입력하세요
+    5000
+    
+    1번 손님이 3번 손님에게 대출 받아서 현재 남은 금액 16000원 입니다
+    
+    3번 손님은 1번 손님에게 5000원을 빌려줘서 현재 남은 금액 15000원 입니다
+    1. 더 빌린다, 2. 빌리지 않는다
+    2
+    
+    대출 시스템을 종료하고 메인 메뉴로 돌아갑니다
+    
+    
+    1 번째 손님이 치킨을 구매해서 현재 남은 금액 16000 원 입니다
+    
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    상환
+    대출 상환 메뉴 입니다
+    1 번 손님 2 번 손님에게 상환힙니다
+    얼마를 상환 하시겠습니까?
+    5000
+    
+    1번 손님 2번 손님에게 5000원을 상환해서 11000원이 남았습니다다
+    
+    2번 손님 1번 손님에게 5000원을 받아서 15000원이 남았습니다
+    
+    1 번 손님 3 번 손님에게도 대출 받은 이력이 있어서 상환 해야 됩니다
+    얼마를 상환 하시겠습니까?
+    3000
+    
+    1번 손님 3번 손님에게 3000원을 상환해서 8000원이 남았습니다
+    
+    3번 손님 1번 손님에게 3000원을 받아서 18000원이 남았습니다
+    
+    현재 손님 번호 = 1
+    1 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    다음손님
+    
+    1 번 손님에서 다음 손님으로 넘어갑니다
+    2 번 손님으로 넘어갑니다
+    
+    현재 손님 번호 = 1
+    2 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    피자
+    
+    2 번째 손님이 피자를 구매해서 현재 남은 금액 10000 원 입니다
+    현재 손님 번호 = 1
+    2 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    라면
+    
+    2 번째 손님이 라면을 구매해서 현재 남은 금액 7000 원 입니다
+    현재 손님 번호 = 1
+    2 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    다음손님
+    2 번 손님에서 다음 손님으로 넘어갑니다
+    3 번 손님으로 넘어갑니다
+    
+    현재 손님 번호 = 1
+    3 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    라면
+    
+    3 번째 손님이 라면을 구매해서 현재 남은 금액 15000 원 입니다
+    현재 손님 번호 = 1
+    3 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    우동
+    
+    3 번째 손님이 우동을 구매해서 현재 남은 금액 12000 원 입니다
+    현재 손님 번호 = 1
+    3 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    다음손님
+    3 번 손님에서 다음 손님으로 넘어갑니다
+    4 번 손님으로 넘어갑니다
+    
+    현재 손님 번호 = 1
+    4 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    치킨
+    
+    4 번째 손님이 치킨을 구매해서 현재 남은 금액 15000 원 입니다
+    현재 손님 번호 = 1
+    4 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    피자
+    
+    4 번째 손님이 피자를 구매해서 현재 남은 금액 10000 원 입니다
+    현재 손님 번호 = 1
+    4 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    라면
+    
+    4 번째 손님이 라면을 구매해서 현재 남은 금액 7000 원 입니다
+    현재 손님 번호 = 1
+    4 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    우동
+    
+    4 번째 손님이 우동을 구매해서 현재 남은 금액 4000 원 입니다
+    현재 손님 번호 = 1
+    4 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    치킨
+    4 번 손님 현재 가지고 있는 돈이 부족해서 대출 받으셔야 합니다
+    치킨 구매를 실패해서 현재 남은 금액 4000 원 입니다
+    
+    자동으로 대출메뉴로 넘어갑니다
+    
+    4 번 손님의 다음 손님에게 대출 받습니다
+    4 번 손님 대출 받으실 금액을 입력하세요
+    10000
+    
+    
+    
+    
+    4번 손님이 5번 손님에게 10000원을 대출 받아서 현재 남은 금액 14000원 입니다
+    
+    5번 손님은 4번 손님에게 10000원을 빌려줘서 현재 남은 금액 10000원 입니다
+    1. 더 빌린다, 2. 빌리지 않는다
+    1
+    
+    
+    자동으로 6 번 손님에게 대출 받습니다
+    
+    4 번 손님 추가로 대출 받으실 금액을 입력하세요
+    5000
+    
+    4번 손님이 6번 손님에게 대출 받아서 현재 남은 금액 19000원 입니다
+    
+    6번 손님은 4번 손님에게 5000원을 빌려줘서 현재 남은 금액 5000원 입니다
+    1. 더 빌린다, 2. 빌리지 않는다
+    2
+    
+    대출 시스템을 종료하고 메인 메뉴로 돌아갑니다
+    
+    
+    4 번째 손님이 치킨을 구매해서 현재 남은 금액 19000 원 입니다
+    현재 손님 번호 = 1
+    4 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    다음손님
+    
+    4 번 손님에서 다음 손님으로 넘어갑니다
+    5 번 손님으로 넘어갑니다
+    현재 손님 번호 = 1
+    5 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    치킨
+    
+    5 번째 손님이 치킨을 구매해서 현재 남은 금액 5000 원 입니다
+    현재 손님 번호 = 1
+    5 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    라면
+    
+    5 번째 손님이 라면을 구매해서 현재 남은 금액 2000 원 입니다
+    현재 손님 번호 = 1
+    5 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    다음손님
+    5 번 손님에서 다음 손님으로 넘어갑니다
+    6 번 손님으로 넘어갑니다
+    
+    현재 손님 번호 = 1
+    6 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    라면
+    
+    6 번째 손님이 라면을 구매해서 현재 남은 금액 2000 원 입니다
+    현재 손님 번호 = 1
+    6 번째 손님이 쇼핑 중입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 대출, 8. 상환, 9. 다음 손님, 10. 손님 선택, 11. 종료(조회, 수정, 삭제)]
+    종료
+    ======= 주문표 =======
+    
+    
+    치킨 x 3 = 15000
+    
+    피자 x 3 = 15000
+    
+    타코야키 x 1 = 3000
+    
+    라면 x 6 = 18000
+    
+    우동 x 3 = 9000
+    
+    ======= 1 번째 손님 =======
+    
+    원래 가지고 있던 금액 = 20000
+    
+    치킨 x 1 = 5000원
+    
+    피자 x 1 = 5000
+    
+    타코야키 x 1 = 3000
+    
+    라면 x 1 = 3000
+    
+    우동 x 1 = 3000
+    
+    현재 가지고 있는 금액 = 8000 원
+    빚 진 금액 = 15000 원
+    빚 진 금액에서 상환 후 남은 금액 = 7000 원
+    미납된 금액 = 0 원
+    빌려준 금액 = 0 원
+    22:55:06.150 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn0: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=1, chicken=5000, pizza=5000, taco=3000, ramen=3000, udong=3000, firstmoney=20000, money=8000, chickencount=1, pizzacount=1, tacocount=1, ramencount=1, udongcount=1, borrowmoney=15000, payoff=7000, unpaid=0, lendmoney=0)
+    
+    ======= 2 번째 손님 =======
+    
+    원래 가지고 있던 금액 = 20000
+    
+    피자 x 1 = 5000
+    
+    라면 x 1 = 3000
+    
+    현재 가지고 있는 금액 = 7000 원
+    빚 진 금액 = 0 원
+    빚 진 금액에서 상환 후 남은 금액 = 0 원
+    미납된 금액 = 5000 원
+    빌려준 금액 = 10000 원
+    22:55:06.183 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn1: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=2, chicken=0, pizza=5000, taco=0, ramen=3000, udong=0, firstmoney=20000, money=7000, chickencount=0, pizzacount=1, tacocount=0, ramencount=1, udongcount=0, borrowmoney=0, payoff=0, unpaid=5000, lendmoney=10000)
+    
+    ======= 3 번째 손님 =======
+    
+    원래 가지고 있던 금액 = 20000
+    
+    라면 x 1 = 3000
+    
+    우동 x 1 = 3000
+    
+    현재 가지고 있는 금액 = 12000 원
+    빚 진 금액 = 0 원
+    빚 진 금액에서 상환 후 남은 금액 = 0 원
+    미납된 금액 = 2000 원
+    빌려준 금액 = 5000 원
+    22:55:06.189 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn2: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=3, chicken=0, pizza=0, taco=0, ramen=3000, udong=3000, firstmoney=20000, money=12000, chickencount=0, pizzacount=0, tacocount=0, ramencount=1, udongcount=1, borrowmoney=0, payoff=0, unpaid=2000, lendmoney=5000)
+    
+    ======= 4 번째 손님 =======
+    
+    원래 가지고 있던 금액 = 20000
+    
+    치킨 x 1 = 5000원
+    
+    피자 x 1 = 5000
+    
+    라면 x 1 = 3000
+    
+    우동 x 1 = 3000
+    
+    현재 가지고 있는 금액 = 19000 원
+    빚 진 금액 = 15000 원
+    빚 진 금액에서 상환 후 남은 금액 = 0 원
+    미납된 금액 = 0 원
+    빌려준 금액 = 0 원
+    22:55:06.190 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn3: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=4, chicken=5000, pizza=5000, taco=0, ramen=3000, udong=3000, firstmoney=20000, money=19000, chickencount=1, pizzacount=1, tacocount=0, ramencount=1, udongcount=1, borrowmoney=15000, payoff=0, unpaid=0, lendmoney=0)
+    
+    ======= 5 번째 손님 =======
+    
+    원래 가지고 있던 금액 = 20000
+    
+    치킨 x 1 = 5000원
+    
+    라면 x 1 = 3000
+    
+    현재 가지고 있는 금액 = 2000 원
+    빚 진 금액 = 0 원
+    빚 진 금액에서 상환 후 남은 금액 = 0 원
+    미납된 금액 = 10000 원
+    빌려준 금액 = 10000 원
+    22:55:06.198 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn4: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=5, chicken=5000, pizza=0, taco=0, ramen=3000, udong=0, firstmoney=20000, money=2000, chickencount=1, pizzacount=0, tacocount=0, ramencount=1, udongcount=0, borrowmoney=0, payoff=0, unpaid=10000, lendmoney=10000)
+    
+    ======= 6 번째 손님 =======
+    
+    원래 가지고 있던 금액 = 10000
+    
+    라면 x 1 = 3000
+    
+    현재 가지고 있는 금액 = 2000 원
+    빚 진 금액 = 0 원
+    빚 진 금액에서 상환 후 남은 금액 = 0 원
+    미납된 금액 = 5000 원
+    빌려준 금액 = 5000 원
+    22:55:06.199 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn5: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=6, chicken=0, pizza=0, taco=0, ramen=3000, udong=0, firstmoney=10000, money=2000, chickencount=0, pizzacount=0, tacocount=0, ramencount=1, udongcount=0, borrowmoney=0, payoff=0, unpaid=5000, lendmoney=5000)
+    
+    쇼핑이 끝났습니다 메뉴를 선택하세요
+    1. 종료, 2. 조회, 3. 수정, 4. 삭제
+    조회
+    
+    조회 할 고객 아이디 번호를 입력하세요
+    1
+    ======= 조회 =======
+    22:56:30.922 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn6: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=1, chicken=5000, pizza=5000, taco=3000, ramen=3000, udong=3000, firstmoney=20000, money=8000, chickencount=1, pizzacount=1, tacocount=1, ramencount=1, udongcount=1, borrowmoney=15000, payoff=7000, unpaid=0, lendmoney=0)
+    
+    쇼핑이 끝났습니다 메뉴를 선택하세요
+    1. 종료, 2. 조회, 3. 수정, 4. 삭제
+    조회
+    
+    조회 할 고객 아이디 번호를 입력하세요
+    2
+    ======= 조회 =======
+    22:56:35.418 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn7: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=2, chicken=0, pizza=5000, taco=0, ramen=3000, udong=0, firstmoney=20000, money=7000, chickencount=0, pizzacount=1, tacocount=0, ramencount=1, udongcount=0, borrowmoney=0, payoff=0, unpaid=5000, lendmoney=10000)
+    
+    쇼핑이 끝났습니다 메뉴를 선택하세요
+    1. 종료, 2. 조회, 3. 수정, 4. 삭제
+    조회
+    
+    조회 할 고객 아이디 번호를 입력하세요
+    3
+    ======= 조회 =======
+    22:56:41.080 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn8: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    Member(memberId=3, chicken=0, pizza=0, taco=0, ramen=3000, udong=3000, firstmoney=20000, money=12000, chickencount=0, pizzacount=0, tacocount=0, ramencount=1, udongcount=1, borrowmoney=0, payoff=0, unpaid=2000, lendmoney=5000)
+    
+    쇼핑이 끝났습니다 메뉴를 선택하세요
+    1. 종료, 2. 조회, 3. 수정, 4. 삭제
+    수정
+    
+    수정 할 고객을 선택하세요
+    1
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 돌아가기
+    치킨
+    
+    1 번째 손님이 치킨을 구매해서 현재 남은 금액 3000 원 입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 돌아가기
+    환불
+    
+    환불 할 메뉴를 선택하세요
+    
+    1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동
+    피자
+    피자 몇 개를 환불 하시겠습니까?
+    1
+    1 번 손님 피자 1 개를 환불해서 현재 남은 금액 8000 원 입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 돌아가기
+    환불
+    
+    환불 할 메뉴를 선택하세요
+    
+    1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동
+    우동
+    우동 몇 개를 환불 하시겠습니까?
+    1
+    1 번 손님 우동 1 개를 환불해서 현재 남은 금액 11000 원 입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 돌아가기
+    타코야키
+    
+    1 번째 손님이 타코야키를 구매해서 현재 남은 금액 8000 원 입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 돌아가기
+    타코야키
+    
+    1 번째 손님이 타코야키를 구매해서 현재 남은 금액 5000 원 입니다
+    
+    메뉴를 선택하세요
+    [1. 치킨, 2. 피자, 3. 타코야키, 4. 라면, 5. 우동, 6. 환불, 7. 돌아가기
+    돌아가기
+    22:57:31.580 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn9: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    22:57:31.580 [main] INFO bohyun.JDBCTest.repository.MemberRepository - resultSize = 1
+    
+    ======= 데이터 수정 완료 =======
+    메뉴로 돌아갑니다
+    
+    쇼핑이 끝났습니다 메뉴를 선택하세요
+    1. 종료, 2. 조회, 3. 수정, 4. 삭제
+    삭제
+    
+    삭제 할 고객 아이디 번호를 입력하세요
+    1
+    22:58:09.368 [main] INFO bohyun.JDBCTest.connection.DBConnectionUtility - get Connection = conn10: url=jdbc:h2:tcp://localhost/~/test user=SA, class = class org.h2.jdbc.JdbcConnection
+    삭제 되었습니다
+    ======= 데이터 삭제 완료 =======
+    
+    
+    쇼핑이 끝났습니다 메뉴를 선택하세요
+    1. 종료, 2. 조회, 3. 수정, 4. 삭제
+    종료
+    프로그램을 종료합니다
+    
+    Process finished with exit code 1
